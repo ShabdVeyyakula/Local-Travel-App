@@ -1,26 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Amplify } from 'aws-amplify'
-import awsconfig from './src/aws-exports'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import Colors from './app/utilities/Color';
 
-Amplify.configure(awsconfig)
-
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 //hola
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <WelcomeScreen/>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.BACKGROUND,
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });

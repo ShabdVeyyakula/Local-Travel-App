@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, Pressable} from 'react-native'
 import React from 'react'
 import Colors from '../utilities/Color'
 
+
 export default function WelcomeScreen() {
   return (
     <View style={styles.main}>

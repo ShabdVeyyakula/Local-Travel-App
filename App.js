@@ -7,14 +7,14 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 import Login from "./app/screens/Login";
 import Register from "./app/screens/Register";
 import DashScreen from "./app/screens/DashScreen";
-
-//hola
+import BottomBar from "./app/components/BottomBar";//hola
 export default function App() {
   return (
     <NavigationContainer>
       <SafeAreaView style={styles.container}>
         <DashScreen />
       </SafeAreaView>
+      <BottomBar/>
     </NavigationContainer>
   );
 }
